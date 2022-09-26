@@ -29,34 +29,35 @@ namespace First_Windforms_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonFirst = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonFirst
             // 
-            this.button1.Location = new System.Drawing.Point(748, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Przycisk";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonFirst.Location = new System.Drawing.Point(517, 32);
+            this.buttonFirst.Name = "buttonFirst";
+            this.buttonFirst.Size = new System.Drawing.Size(313, 221);
+            this.buttonFirst.TabIndex = 0;
+            this.buttonFirst.Text = "Przycisk";
+            this.buttonFirst.UseVisualStyleBackColor = true;
+            this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 561);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonFirst);
             this.Name = "MainForm";
             this.Text = "Pierwszy Program Okienkowy";
+            this.Click += new System.EventHandler(this.button1_Click);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonFirst;
     }
 }
 

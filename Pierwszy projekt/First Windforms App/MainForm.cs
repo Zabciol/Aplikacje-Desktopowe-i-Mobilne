@@ -20,7 +20,7 @@ namespace First_Windforms_App
         private void buttonFirst_Click(object sender, EventArgs e)
         {
 
-
+            
             MessageBox.Show("Witaj w pierwszym programie WindForms");
         }
     }

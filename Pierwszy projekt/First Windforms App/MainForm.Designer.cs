@@ -50,7 +50,7 @@ namespace First_Windforms_App
             this.Controls.Add(this.buttonFirst);
             this.Name = "MainForm";
             this.Text = "Pierwszy Program Okienkowy";
-            this.Click += new System.EventHandler(this.button1_Click);
+            this.Click += new System.EventHandler(this.buttonFirst_Click);
             this.ResumeLayout(false);
 
         }

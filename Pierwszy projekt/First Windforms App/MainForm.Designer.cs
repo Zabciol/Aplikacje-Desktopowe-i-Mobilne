@@ -35,7 +35,8 @@ namespace First_Windforms_App
             // 
             // buttonFirst
             // 
-            this.buttonFirst.Location = new System.Drawing.Point(752, 30);
+            this.buttonFirst.Font = new System.Drawing.Font("Source Serif Pro Black", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.buttonFirst.Location = new System.Drawing.Point(731, 57);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(313, 221);
             this.buttonFirst.TabIndex = 0;

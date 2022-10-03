@@ -21,6 +21,11 @@ namespace First_Windforms_App
         {
             MessageBox.Show("Witaj w pierwszym programie WindForms");
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

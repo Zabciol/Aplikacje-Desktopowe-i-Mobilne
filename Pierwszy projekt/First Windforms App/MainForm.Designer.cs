@@ -17,7 +17,8 @@ namespace First_Windforms_App
             if (disposing && (components != null))
             {
                 components.Dispose();
-            }
+           }
+
             base.Dispose(disposing);
         }
 
@@ -31,8 +32,9 @@ namespace First_Windforms_App
         {
             this.buttonFirst = new System.Windows.Forms.Button();
             this.buttonHello = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.btnName = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonFirst
@@ -55,30 +57,44 @@ namespace First_Windforms_App
             this.buttonHello.Text = "button1";
             this.buttonHello.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // labelName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 295);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("OpenSymbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelName.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labelName.Location = new System.Drawing.Point(124, 262);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(212, 46);
+            this.labelName.TabIndex = 2;
+            this.labelName.Text = "Podaj imię";
+            this.labelName.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 332);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 23);
-            this.textBox1.TabIndex = 3;
+            this.textBoxName.Location = new System.Drawing.Point(124, 332);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(269, 23);
+            this.textBoxName.TabIndex = 3;
+            // 
+            // btnName
+            // 
+            this.btnName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnName.Location = new System.Drawing.Point(147, 371);
+            this.btnName.Name = "btnName";
+            this.btnName.Size = new System.Drawing.Size(222, 32);
+            this.btnName.TabIndex = 4;
+            this.btnName.Text = "Przywitaj się";
+            this.btnName.UseVisualStyleBackColor = true;
+            this.btnName.Click += new System.EventHandler(this.btnName_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 561);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnName);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonHello);
             this.Controls.Add(this.buttonFirst);
             this.Name = "MainForm";
@@ -93,8 +109,9 @@ namespace First_Windforms_App
 
         private System.Windows.Forms.Button buttonFirst;
         private System.Windows.Forms.Button buttonHello;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Button btnName;
     }
 }
 

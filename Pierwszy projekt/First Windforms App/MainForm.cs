@@ -26,6 +26,13 @@ namespace First_Windforms_App
         {
 
         }
+
+        private void btnName_Click(object sender, EventArgs e)
+        {
+            string message = "Witaj " + textBoxName.Text + " w tym pragramie!";
+
+            MessageBox.Show(message);
+        }
     }
 }
 

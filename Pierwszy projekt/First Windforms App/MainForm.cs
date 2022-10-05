@@ -33,6 +33,11 @@ namespace First_Windforms_App
 
             MessageBox.Show(message);
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -91,14 +91,17 @@ namespace First_Windforms_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1119, 561);
+            this.ClientSize = new System.Drawing.Size(1184, 688);
             this.Controls.Add(this.btnName);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonHello);
             this.Controls.Add(this.buttonFirst);
+            this.MaximumSize = new System.Drawing.Size(1200, 800);
+            this.MinimumSize = new System.Drawing.Size(100, 100);
             this.Name = "MainForm";
             this.Text = "Pierwszy Program Okienkowy";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.Click += new System.EventHandler(this.buttonFirst_Click);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -35,6 +35,8 @@ namespace First_Windforms_App
             this.labelName = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.btnName = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonFirst
@@ -71,7 +73,7 @@ namespace First_Windforms_App
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(124, 332);
+            this.textBoxName.Location = new System.Drawing.Point(124, 311);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(269, 23);
             this.textBoxName.TabIndex = 3;
@@ -79,7 +81,7 @@ namespace First_Windforms_App
             // btnName
             // 
             this.btnName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnName.Location = new System.Drawing.Point(147, 371);
+            this.btnName.Location = new System.Drawing.Point(124, 432);
             this.btnName.Name = "btnName";
             this.btnName.Size = new System.Drawing.Size(222, 32);
             this.btnName.TabIndex = 4;
@@ -87,11 +89,32 @@ namespace First_Windforms_App
             this.btnName.UseVisualStyleBackColor = true;
             this.btnName.Click += new System.EventHandler(this.btnName_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(124, 388);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(145, 23);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.Location = new System.Drawing.Point(124, 355);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 30);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Wiek";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 688);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnName);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
@@ -115,6 +138,8 @@ namespace First_Windforms_App
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Button btnName;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

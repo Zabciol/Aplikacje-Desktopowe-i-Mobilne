@@ -27,6 +27,20 @@ namespace SimpleCalculatorApp
                 int result = firstNumber + secondNumber;
                 labelResult.Text = "Wynik operacji dodawania: " + result;
             }
+            else
+            {
+                labelResult.Text = "Podano nieprawidłowe dane"
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonNumber1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

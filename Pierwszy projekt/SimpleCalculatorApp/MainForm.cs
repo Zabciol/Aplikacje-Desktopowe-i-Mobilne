@@ -12,35 +12,46 @@ namespace SimpleCalculatorApp
 {
     public partial class MainForm : Form
     {
+        bool buttonAddIfClick;
+        bool buttonMinusIfClick;
+        bool buttonMultiplicationIfClick;
+        bool buttonDivisionIfClick;
         public MainForm()
         {
             InitializeComponent();
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+        private void button_Click()
         {
             int firstNumber;
-            int secondNumber;
-            if (int.TryParse(textBoxFirsNumber.Text, out firstNumber)
-                && int.TryParse(textBoxSecondNumber.Text, out secondNumber))
-            {
-                int result = firstNumber + secondNumber;
-                labelResult.Text = "Wynik operacji dodawania: " + result;
-            }
-            else
-            {
-                labelResult.Text = "Podano nieprawidłowe dane"
-            }
-        }
+            int.TryParse(textBoxMain.Text, out firstNumber);
 
-        private void button2_Click(object sender, EventArgs e)
+            textBoxMain.Text = "";
+        }
+        private void buttonAdd_Click(object sender, EventArgs e)
         {
-
+            button_Click();
+            
         }
 
-        private void buttonNumber1_Click(object sender, EventArgs e)
-        {
 
-        }
+
+
+
+        //private void buttonAdd_Click(object sender, EventArgs e)
+        //{
+        //    int firstNumber;
+        //    int secondNumber;
+        //    if (int.TryParse(textBoxFirsNumber.Text, out firstNumber)
+        //        && int.TryParse(textBoxMain.Text, out secondNumber))
+        //    {
+        //        int result = firstNumber + secondNumber;
+        //        labelResult.Text = "" + result;
+        //    }
+        //    else
+        //    {
+        //        labelResult.Text = "Podano nieprawidłowe dane"
+        //    }
+        //}
     }
 }

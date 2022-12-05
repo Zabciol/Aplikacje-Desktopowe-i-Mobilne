@@ -18,9 +18,11 @@ namespace Sprawdzian_3D
         }
 
 
-        private void getVariables(double *a, double *b, double *c )
+        private void getVariables(double a, double b, double c )
         {
-
+            double.TryParse(textBoxDataA.Text, out a);
+            double.TryParse(textBoxDataB.Text, out b);
+            double.TryParse(textBoxDataC.Text, out c);
         }
 
         private double getDelta(double a, double b, double c)
@@ -44,7 +46,7 @@ namespace Sprawdzian_3D
             double a;
             double b;
             double c;
-            getVariables(&a, &b, &c);
+            getVariables(a, b, c);
             
         }
         //private void buttonCheck_Click(object sender, EventArgs e)

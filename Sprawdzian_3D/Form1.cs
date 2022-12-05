@@ -17,11 +17,16 @@ namespace Sprawdzian_3D
             InitializeComponent();
         }
 
+
+        private void getVariables(double *a, double *b, double *c )
+        {
+
+        }
+
         private double getDelta(double a, double b, double c)
         {
             double delta = (b * b) - (4 * a * c);
-            double pierwiastek_z_delty = Math.Sqrt(delta);
-            return pierwiastek_z_delty;
+            return delta;
         }
 
         private double getX1(double deltaPierwiastek, double a, double b, double c)
@@ -34,20 +39,45 @@ namespace Sprawdzian_3D
             double x2 = (-b + deltaPierwiastek) / (2 * a);
             return x2;
         }
-
         private void buttonCheck_Click(object sender, EventArgs e)
         {
             double a;
-            double.TryParse(textBoxDataA.Text, out a);
             double b;
-            double.TryParse(textBoxDataB.Text, out b);
             double c;
-            double.TryParse(textBoxDataC.Text, out c);
-            double deltaPierwiastek = getDelta(a, b, c);
-            double x1 = getX1(deltaPierwiastek, a, b, c);
-            double x2 = getX2(deltaPierwiastek, a, b, c);
+            getVariables(&a, &b, &c);
+            
+        }
+        //private void buttonCheck_Click(object sender, EventArgs e)
+        //{
+        //    double a;
+        //    double b;
+        //    double c;
 
-            labelResults.Text = "x1 = " + x1 + ", x2 = " + x2;
+        //    if(    double.TryParse(textBoxDataA.Text, out a) == false   
+        //        || double.TryParse(textBoxDataB.Text, out b) == false
+        //        || double.TryParse(textBoxDataC.Text, out c) == false)
+        //    {
+        //        labelResults.Text = "Wprowadź poprawne dane!";
+        //    }
+        //    else
+        //    {
+        //        double delta = getDelta(a, b, c);
+        //        if (delta >= 0)
+        //        {
+        //            double deltaPierwiastek = Math.Sqrt(delta);
+        //            double x1 = getX1(deltaPierwiastek, a, b, c);
+        //            double x2 = getX2(deltaPierwiastek, a, b, c);
+        //            labelResults.Text = "x1 = " + x1 + ", x2 = " + x2;
+        //        }
+        //        else
+        //        {
+        //            labelResults.Text = "Wprowadź poprawne dane!";
+        //        }
+        //    }
+        //}
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }

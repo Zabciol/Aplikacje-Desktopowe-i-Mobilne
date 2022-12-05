@@ -119,9 +119,9 @@ namespace Sprawdzian_3D
             this.labelResults.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelResults.Location = new System.Drawing.Point(12, 220);
             this.labelResults.Name = "labelResults";
-            this.labelResults.Size = new System.Drawing.Size(90, 37);
+            this.labelResults.Size = new System.Drawing.Size(165, 37);
             this.labelResults.TabIndex = 9;
-            this.labelResults.Text = "Wynik";
+            this.labelResults.Text = "ax^2+bx+c .";
             // 
             // Form1
             // 
@@ -139,6 +139,7 @@ namespace Sprawdzian_3D
             this.Controls.Add(this.labelDane);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

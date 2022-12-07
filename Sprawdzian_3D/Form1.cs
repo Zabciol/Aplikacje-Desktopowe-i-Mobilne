@@ -18,11 +18,18 @@ namespace Sprawdzian_3D
         }
 
 
-        private void getVariables(double a, double b, double c )
+        private void tryParse(out double a, out double b, out double c ,ref bool isRight)
         {
-            double.TryParse(textBoxDataA.Text, out a);
-            double.TryParse(textBoxDataB.Text, out b);
-            double.TryParse(textBoxDataC.Text, out c);
+            a = 1;
+            b = 1;
+            c = 1;
+            if (
+            double.TryParse(textBoxDataA.Text, out a) &&
+            double.TryParse(textBoxDataB.Text, out b) &&
+            double.TryParse(textBoxDataC.Text, out c) )
+            {
+                isRight = true;
+            }
         }
 
         private double getDelta(double a, double b, double c)
@@ -36,19 +43,43 @@ namespace Sprawdzian_3D
             double x1 = (-b - deltaPierwiastek) / (2 * a);
             return x1;
         }
+
+
         private double getX2(double deltaPierwiastek, double a, double b, double c)
         {
             double x2 = (-b + deltaPierwiastek) / (2 * a);
             return x2;
         }
+
+
         private void buttonCheck_Click(object sender, EventArgs e)
         {
-            double a;
-            double b;
-            double c;
-            getVariables(a, b, c);
-            
+            double a, b ,c ; 
+            bool isRight = false;
+
+            tryParse(out a, out b, out c, ref isRight);
+            if(isRight)
+            { 
+                double delta = getDelta(a, b, c);
+                if(delta >= 0)
+                {
+                    double deltaPierwiastek = Math.Sqrt(delta);
+                    double x1 = getX1(deltaPierwiastek, a, b, c);
+                    double x2 = getX2(deltaPierwiastek, a, b, c);
+                    labelResults.Text = "x1 = " + x1 + ", x2 = " + x2;
+                }
+                else
+                {
+                    labelResults.Text = "Wprowadź poprawne dane";
+                }
+            }
+            else
+            {
+                labelResults.Text = "Wprowadź poprawne dane";
+            }
         }
+
+
         //private void buttonCheck_Click(object sender, EventArgs e)
         //{
         //    double a;

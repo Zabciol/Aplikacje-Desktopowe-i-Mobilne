@@ -32,14 +32,14 @@ namespace Test
             {
                 result++;
             }
-            if (checkBox1_pytanie_3.Checked && checkBox3_pytanie_3.Checked)
+            if (checkBox1_pytanie_3.Checked && checkBox3_pytanie_3.Checked && !checkBox2_pytanie_3.Checked)
             {
                 result++;
             }
-            if (textBox_pytanie_4.Text == "Droga mleczna" ||
-                textBox_pytanie_4.Text == "droga mleczna" ||
-                textBox_pytanie_4.Text == "Milky way" ||
-                    textBox_pytanie_4.Text == "milky way")
+
+            
+            if (textBox_pytanie_4.Text.Replace(" ", "").ToUpper() == "DROGA MLECZNA" ||
+                textBox_pytanie_4.Text.Replace(" ", "").ToUpper() == "MILKY WAY" )
             {
                 result++;
             }

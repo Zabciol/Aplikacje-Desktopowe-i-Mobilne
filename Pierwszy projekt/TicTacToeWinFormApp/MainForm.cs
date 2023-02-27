@@ -37,6 +37,15 @@ namespace TicTacToeWinFormApp
         private void buttonNewGame_Click(object sender, EventArgs e)
         {
             currentPlayerNumber = comboBoxWhoStartGame.SelectedIndex;
+
+            for(int col = 0; col< 3; col++)
+            {
+                for(int row = 0; row < 3; row++)
+                {
+                    buttonBoard[col, row].Text = ""; 
+                }
+            }
+
             tableLayoutPanelBoard.Visible = true;
         }
 
@@ -46,7 +55,7 @@ namespace TicTacToeWinFormApp
             if (buttonSender == null)
                 return;
 
-            //przycisk jest już zajęty przez gracza
+            //przycisk jest już zajęty przez gracza  
             if (buttonSender.Text != "")
                 return;
 
@@ -55,7 +64,8 @@ namespace TicTacToeWinFormApp
             //sprawdzenie czy koniec gry (wygrana lub remis)
             if (CheckWin(currentPlayerNumber))
             {
-
+                MessageBox.Show("Wygrał " + players[currentPlayerNumber] + "!!");
+                tableLayoutPanelBoard.Visible = false;
                 return;
             }
 
@@ -67,6 +77,7 @@ namespace TicTacToeWinFormApp
                 currentPlayerNumber = 1;
             else
                 currentPlayerNumber = 0;
+
             */
             /*
             currentPlayerNumber = (currentPlayerNumber == 0) ? 1 : 0;

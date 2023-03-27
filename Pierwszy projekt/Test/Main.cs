@@ -32,7 +32,10 @@ namespace Test
             {
                 result++;
             }
-            if (checkBox1_pytanie_3.Checked && checkBox3_pytanie_3.Checked && !checkBox2_pytanie_3.Checked)
+
+            if (checkBox_pytanie_3_odp_1.Checked &&
+                checkBox_pytanie_3_odp_3.Checked &&
+                !checkBox_pytanie_3_odp_2.Checked)
             {
                 result++;
             }

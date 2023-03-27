@@ -30,9 +30,9 @@ namespace Test
         private void InitializeComponent()
         {
             this.pytanie_1_groupBox = new System.Windows.Forms.GroupBox();
-            this.pytanie1_odp3 = new System.Windows.Forms.RadioButton();
+            this.button_pytanie1_odp3 = new System.Windows.Forms.RadioButton();
             this.button_pytanie1_odp2 = new System.Windows.Forms.RadioButton();
-            this.pytanie1_odp1 = new System.Windows.Forms.RadioButton();
+            this.button_pytanie1_odp1 = new System.Windows.Forms.RadioButton();
             this.pytanie1_label = new System.Windows.Forms.Label();
             this.pytanie_2_groupBox = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -40,9 +40,9 @@ namespace Test
             this.button_pytanie_2_odp_1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pytanie_3_groupBox = new System.Windows.Forms.GroupBox();
-            this.checkBox3_pytanie_3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2_pytanie_3 = new System.Windows.Forms.CheckBox();
-            this.checkBox1_pytanie_3 = new System.Windows.Forms.CheckBox();
+            this.checkBox_pytanie_3_odp_3 = new System.Windows.Forms.CheckBox();
+            this.checkBox_pytanie_3_odp_2 = new System.Windows.Forms.CheckBox();
+            this.checkBox_pytanie_3_odp_1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pytanie_4_groupBox = new System.Windows.Forms.GroupBox();
             this.textBox_pytanie_4 = new System.Windows.Forms.TextBox();
@@ -56,9 +56,9 @@ namespace Test
             // 
             // pytanie_1_groupBox
             // 
-            this.pytanie_1_groupBox.Controls.Add(this.pytanie1_odp3);
+            this.pytanie_1_groupBox.Controls.Add(this.button_pytanie1_odp3);
             this.pytanie_1_groupBox.Controls.Add(this.button_pytanie1_odp2);
-            this.pytanie_1_groupBox.Controls.Add(this.pytanie1_odp1);
+            this.pytanie_1_groupBox.Controls.Add(this.button_pytanie1_odp1);
             this.pytanie_1_groupBox.Controls.Add(this.pytanie1_label);
             this.pytanie_1_groupBox.Location = new System.Drawing.Point(12, 12);
             this.pytanie_1_groupBox.Name = "pytanie_1_groupBox";
@@ -68,16 +68,16 @@ namespace Test
             this.pytanie_1_groupBox.Text = "Pytanie 1";
             this.pytanie_1_groupBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // pytanie1_odp3
+            // button_pytanie1_odp3
             // 
-            this.pytanie1_odp3.AutoSize = true;
-            this.pytanie1_odp3.Location = new System.Drawing.Point(6, 87);
-            this.pytanie1_odp3.Name = "pytanie1_odp3";
-            this.pytanie1_odp3.Size = new System.Drawing.Size(31, 19);
-            this.pytanie1_odp3.TabIndex = 4;
-            this.pytanie1_odp3.TabStop = true;
-            this.pytanie1_odp3.Text = "5";
-            this.pytanie1_odp3.UseVisualStyleBackColor = true;
+            this.button_pytanie1_odp3.AutoSize = true;
+            this.button_pytanie1_odp3.Location = new System.Drawing.Point(6, 87);
+            this.button_pytanie1_odp3.Name = "button_pytanie1_odp3";
+            this.button_pytanie1_odp3.Size = new System.Drawing.Size(31, 19);
+            this.button_pytanie1_odp3.TabIndex = 4;
+            this.button_pytanie1_odp3.TabStop = true;
+            this.button_pytanie1_odp3.Text = "5";
+            this.button_pytanie1_odp3.UseVisualStyleBackColor = true;
             // 
             // button_pytanie1_odp2
             // 
@@ -90,16 +90,16 @@ namespace Test
             this.button_pytanie1_odp2.Text = "4";
             this.button_pytanie1_odp2.UseVisualStyleBackColor = true;
             // 
-            // pytanie1_odp1
+            // button_pytanie1_odp1
             // 
-            this.pytanie1_odp1.AutoSize = true;
-            this.pytanie1_odp1.Location = new System.Drawing.Point(6, 37);
-            this.pytanie1_odp1.Name = "pytanie1_odp1";
-            this.pytanie1_odp1.Size = new System.Drawing.Size(31, 19);
-            this.pytanie1_odp1.TabIndex = 2;
-            this.pytanie1_odp1.TabStop = true;
-            this.pytanie1_odp1.Text = "3";
-            this.pytanie1_odp1.UseVisualStyleBackColor = true;
+            this.button_pytanie1_odp1.AutoSize = true;
+            this.button_pytanie1_odp1.Location = new System.Drawing.Point(6, 38);
+            this.button_pytanie1_odp1.Name = "button_pytanie1_odp1";
+            this.button_pytanie1_odp1.Size = new System.Drawing.Size(31, 19);
+            this.button_pytanie1_odp1.TabIndex = 2;
+            this.button_pytanie1_odp1.TabStop = true;
+            this.button_pytanie1_odp1.Text = "3";
+            this.button_pytanie1_odp1.UseVisualStyleBackColor = true;
             // 
             // pytanie1_label
             // 
@@ -168,9 +168,9 @@ namespace Test
             // 
             // pytanie_3_groupBox
             // 
-            this.pytanie_3_groupBox.Controls.Add(this.checkBox3_pytanie_3);
-            this.pytanie_3_groupBox.Controls.Add(this.checkBox2_pytanie_3);
-            this.pytanie_3_groupBox.Controls.Add(this.checkBox1_pytanie_3);
+            this.pytanie_3_groupBox.Controls.Add(this.checkBox_pytanie_3_odp_3);
+            this.pytanie_3_groupBox.Controls.Add(this.checkBox_pytanie_3_odp_2);
+            this.pytanie_3_groupBox.Controls.Add(this.checkBox_pytanie_3_odp_1);
             this.pytanie_3_groupBox.Controls.Add(this.label2);
             this.pytanie_3_groupBox.Location = new System.Drawing.Point(350, 12);
             this.pytanie_3_groupBox.Name = "pytanie_3_groupBox";
@@ -179,35 +179,35 @@ namespace Test
             this.pytanie_3_groupBox.TabStop = false;
             this.pytanie_3_groupBox.Text = "Pytanie 3";
             // 
-            // checkBox3_pytanie_3
+            // checkBox_pytanie_3_odp_3
             // 
-            this.checkBox3_pytanie_3.AutoSize = true;
-            this.checkBox3_pytanie_3.Location = new System.Drawing.Point(6, 87);
-            this.checkBox3_pytanie_3.Name = "checkBox3_pytanie_3";
-            this.checkBox3_pytanie_3.Size = new System.Drawing.Size(32, 19);
-            this.checkBox3_pytanie_3.TabIndex = 4;
-            this.checkBox3_pytanie_3.Text = "8";
-            this.checkBox3_pytanie_3.UseVisualStyleBackColor = true;
+            this.checkBox_pytanie_3_odp_3.AutoSize = true;
+            this.checkBox_pytanie_3_odp_3.Location = new System.Drawing.Point(6, 87);
+            this.checkBox_pytanie_3_odp_3.Name = "checkBox_pytanie_3_odp_3";
+            this.checkBox_pytanie_3_odp_3.Size = new System.Drawing.Size(32, 19);
+            this.checkBox_pytanie_3_odp_3.TabIndex = 4;
+            this.checkBox_pytanie_3_odp_3.Text = "8";
+            this.checkBox_pytanie_3_odp_3.UseVisualStyleBackColor = true;
             // 
-            // checkBox2_pytanie_3
+            // checkBox_pytanie_3_odp_2
             // 
-            this.checkBox2_pytanie_3.AutoSize = true;
-            this.checkBox2_pytanie_3.Location = new System.Drawing.Point(6, 62);
-            this.checkBox2_pytanie_3.Name = "checkBox2_pytanie_3";
-            this.checkBox2_pytanie_3.Size = new System.Drawing.Size(32, 19);
-            this.checkBox2_pytanie_3.TabIndex = 3;
-            this.checkBox2_pytanie_3.Text = "5";
-            this.checkBox2_pytanie_3.UseVisualStyleBackColor = true;
+            this.checkBox_pytanie_3_odp_2.AutoSize = true;
+            this.checkBox_pytanie_3_odp_2.Location = new System.Drawing.Point(6, 62);
+            this.checkBox_pytanie_3_odp_2.Name = "checkBox_pytanie_3_odp_2";
+            this.checkBox_pytanie_3_odp_2.Size = new System.Drawing.Size(32, 19);
+            this.checkBox_pytanie_3_odp_2.TabIndex = 3;
+            this.checkBox_pytanie_3_odp_2.Text = "5";
+            this.checkBox_pytanie_3_odp_2.UseVisualStyleBackColor = true;
             // 
-            // checkBox1_pytanie_3
+            // checkBox_pytanie_3_odp_1
             // 
-            this.checkBox1_pytanie_3.AutoSize = true;
-            this.checkBox1_pytanie_3.Location = new System.Drawing.Point(6, 38);
-            this.checkBox1_pytanie_3.Name = "checkBox1_pytanie_3";
-            this.checkBox1_pytanie_3.Size = new System.Drawing.Size(32, 19);
-            this.checkBox1_pytanie_3.TabIndex = 2;
-            this.checkBox1_pytanie_3.Text = "2";
-            this.checkBox1_pytanie_3.UseVisualStyleBackColor = true;
+            this.checkBox_pytanie_3_odp_1.AutoSize = true;
+            this.checkBox_pytanie_3_odp_1.Location = new System.Drawing.Point(6, 38);
+            this.checkBox_pytanie_3_odp_1.Name = "checkBox_pytanie_3_odp_1";
+            this.checkBox_pytanie_3_odp_1.Size = new System.Drawing.Size(32, 19);
+            this.checkBox_pytanie_3_odp_1.TabIndex = 2;
+            this.checkBox_pytanie_3_odp_1.Text = "2";
+            this.checkBox_pytanie_3_odp_1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -286,17 +286,17 @@ namespace Test
         private System.Windows.Forms.GroupBox pytanie_1_groupBox;
         private System.Windows.Forms.Label pytanie1_label;
         private System.Windows.Forms.RadioButton button_pytanie1_odp2;
-        private System.Windows.Forms.RadioButton pytanie1_odp1;
-        private System.Windows.Forms.RadioButton pytanie1_odp3;
+        private System.Windows.Forms.RadioButton button_pytanie1_odp1;
+        private System.Windows.Forms.RadioButton button_pytanie1_odp3;
         private System.Windows.Forms.GroupBox pytanie_2_groupBox;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton button_pytanie_2_odp_1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox pytanie_3_groupBox;
-        private System.Windows.Forms.CheckBox checkBox3_pytanie_3;
-        private System.Windows.Forms.CheckBox checkBox2_pytanie_3;
-        private System.Windows.Forms.CheckBox checkBox1_pytanie_3;
+        private System.Windows.Forms.CheckBox checkBox_pytanie_3_odp_3;
+        private System.Windows.Forms.CheckBox checkBox_pytanie_3_odp_2;
+        private System.Windows.Forms.CheckBox checkBox_pytanie_3_odp_1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox pytanie_4_groupBox;
         private System.Windows.Forms.TextBox textBox_pytanie_4;

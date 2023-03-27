@@ -38,8 +38,8 @@ namespace Test
             }
 
             
-            if (textBox_pytanie_4.Text.Replace(" ", "").ToUpper() == "DROGA MLECZNA" ||
-                textBox_pytanie_4.Text.Replace(" ", "").ToUpper() == "MILKY WAY" )
+            if (textBox_pytanie_4.Text.Replace(" ", "").ToUpper() == "DROGAMLECZNA" ||
+                textBox_pytanie_4.Text.Replace(" ", "").ToUpper() == "MILKYWAY" )
             {
                 result++;
             }

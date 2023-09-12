@@ -8,8 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Canvas Margin="0,0,10,10">
-            <Button Height="56" Width="132" Canvas.Left="103" Canvas.Top="63" Content="Wrap" HorizontalAlignment="Center" Click="Button_Click"></Button>
-            <Button Content="Doc" Canvas.Left="263" Canvas.Top="63" Height="56" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click_1"></Button>
+            <Button Height="56" Width="132" Canvas.Left="103" Canvas.Top="63" Content="Wrap" HorizontalAlignment="Center" Click=" Wrap_Button_Click"></Button>
+            <Button Content="Doc" Canvas.Left="263" Canvas.Top="63" Height="56" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Doc_Button_Click"></Button>
+            <Button Content="Grid" Canvas.Left="428" Canvas.Top="63" Height="56" Width="132" Click="Grid_Button_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
 
     </Grid>

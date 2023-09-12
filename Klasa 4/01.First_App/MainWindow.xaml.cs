@@ -26,16 +26,22 @@ namespace _01.First_App
         }
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Wrap_Button_Click(object sender, RoutedEventArgs e)
         {
             Wrap_Panel_Window wrap_Panel_Window = new Wrap_Panel_Window();
             wrap_Panel_Window.Show();   
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Doc_Button_Click(object sender, RoutedEventArgs e)
         {
             Doc_Panel_Window doc_Panel_Window = new Doc_Panel_Window();
             doc_Panel_Window.Show();
+        }
+
+        private void Grid_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Grid_Panel_Window grid_Panel_Window = new Grid_Panel_Window();
+            grid_Panel_Window.Show();
         }
     }
 }

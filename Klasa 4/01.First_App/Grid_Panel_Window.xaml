@@ -17,7 +17,7 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>  
         <Button Content="Pierwszy"></Button>
         <Button Content="Drugi" Grid.Column="1"></Button>
         <Button Content="Drugi" Grid.Column="2" Grid.ColumnSpan="3"></Button>

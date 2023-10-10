@@ -10,6 +10,7 @@
     <StackPanel>
 
         <TextBox Text="{Binding ElementName=thisWindow, Path=SourceValue}"></TextBox>
-        <Button Click="Button_Click">Wygeneruj MessageBox'a</Button>
+        <Button Click="Button_Click">Wygeneruj</Button>
+        <TextBlock Text="{Binding ElementName=thisWindow, Path=DayOfTheWeek}"></TextBlock>
     </StackPanel>
 </Window>
